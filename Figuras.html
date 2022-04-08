@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Figuras Geométricas | Curso Práctico de JavaScript en Platzi</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Figuras Geométricas</h1>
+        <p class="header__paragraph">Este es el primer taller del curso práctico de JavaScript</p>
+    </header>
+
+   <div class="content">
+      <main class="main-figures">
+<ol class="forms">
+  <li>
+            <section class="section__square">
+            <h2>Cuadrado</h2>
+    
+            <form class="cuadrado-form">
+                <p>Escribe los datos del cuadrado</p>
+
+
+                <div class="input_number">
+                    <label for="inputCuadrado">
+                        Lado
+                    </label>
+        
+                    <input id="inputCuadrado" type="number">
+                </div>
+
+                <div class="content-buttons">
+                    <button type="button" onclick="calcularPerimetroCuadrado()">
+                        Calcular el perímetro
+                    </button>
+        
+                    <button type="button" onclick="calcularAreaCuadrado()">
+                        Calcular el área
+                    </button>
+                </div>
+            </form>
+        </section>
+  </li>
+  <li>
+
+        <section class="section__triangle">
+            <h2>Triángulo</h2>
+    
+
+            <form class="triángulo-form">
+                <p>Escribe los datos del triángulo</p>
+
+                <div class="input_number">
+
+                    <label for="inputTriangulo1">
+                        Lado 1
+                    </label>
+                    
+                    <input id="inputTriangulo1" type="number">
+                </div>
+
+                <div class="input_number">
+                    <label for="inputTriangulo2">
+                        Lado 2
+                    </label>
+        
+                    <input id="inputTriangulo2" type="number">
+                </div>
+                
+                <div class="input_number">
+                    <label for="inputTriangulo3">
+                        Base
+                    </label>
+        
+                    <input id="inputTriangulo3" type="number">
+                </div>
+
+                <div class="input_number">
+                    <label for="inputTriangulo4">
+                        Altura
+                    </label>
+        
+                    <input id="inputTriangulo4" type="number">
+                </div>
+
+                <div class="content-buttons">
+                    <button type="button" onclick="calcularPerimetroTriangulo()">
+                        Calcular el perímetro
+                    </button>
+        
+                    <button type="button" onclick="calcularAreaTriangulo()">
+                        Calcular el área
+                    </button>
+                </div>
+            </form>
+        </section>
+  </li>
+</ol>
+    </main>
+</body>
+<script src="figuras.js"></script>
+</html>
