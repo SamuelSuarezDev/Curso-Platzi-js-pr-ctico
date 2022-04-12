@@ -19,8 +19,7 @@ function onClickButtonPriceDiscount() {
 
   const resultP = document.getElementById("ResultP");
   resultP.innerText = "El precio con descuento son: $" + precioConDescuento;
-}
-
+  
 const inputCoupon = document.getElementById("InputCoupon");
 const couponValue = inputCoupon.value;
 const coupons = [
@@ -42,16 +41,13 @@ const isCouponValueValid = function (coupon) {
 };
 
 const userCoupon = coupons.find(isCouponValueValid);
-
 if (!userCoupon) {
-  alert("El cupón " + couponValue + "no es válido");
-}
-if (!userCoupon) {
-  alert("El cupón " + couponValue + "no es válido");
 } else {
   const descuento = userCoupon.discount;
   const precioConDescuento = calcularPrecioConDescuento(priceValue, descuento);
 
   const resultP = document.getElementById("ResultP");
   resultP.innerText = "El precio con descuento son: $" + precioConDescuento;
+}
+
 }

@@ -1,3 +1,9 @@
+const valor1 = prompt("Inserta el valor 1");
+const valor2 = prompt("Inserta el valor 2");
+const valor3 = prompt("Inserta el valor 3");
+const valor4 = prompt("Inserta el valor 4");
+const valor5 = prompt("Inserta el valor 5");
+const lista1 = [valor1, valor2, valor3, valor4, valor5];
 function calcularMediaAritmetica(lista) {
   const sumaLista = lista.reduce(function (valorAcumulado = 0, nuevoElemento) {
     return valorAcumulado + nuevoElemento;
@@ -5,11 +11,7 @@ function calcularMediaAritmetica(lista) {
   const promedioLista = sumaLista / lista.length;
   return promedioLista;
 }
-
-const lista1 = [100, 200, 500, 400000000];
-
 const mitadLista1 = parseInt(lista1.length / 2);
-
 function esPar(numerito) {
   if (numerito % 2 === 0) {
     return true;
@@ -30,3 +32,5 @@ if (esPar(lista1.length)) {
 } else {
   mediana = lista1[mitadLista1];
 }
+calcularMediaAritmetica(lista1);
+console.log(mediana);

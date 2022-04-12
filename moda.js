@@ -1,5 +1,9 @@
-const lista1 = [1, 2, 3, 1, 2, 3, 4, 2, 2, 2, 1];
-
+const valor1 = prompt("Inserta el valor 1");
+const valor2 = prompt("Inserta el valor 2");
+const valor3 = prompt("Inserta el valor 3");
+const valor4 = prompt("Inserta el valor 4");
+const valor5 = prompt("Inserta el valor 5");
+const lista1 = [valor1, valor2, valor3, valor4, valor5];
 const lista1Count = {};
 
 lista1.map(function (elemento) {
@@ -16,3 +20,5 @@ const lista1Array = Object.entries(lista1Count).sort(function (
 ) {
   return elementoA[1] - elementoB[1];
 });
+const moda = lista1Array[lista1Array.length - 1];
+alert("La moda es " + moda)
